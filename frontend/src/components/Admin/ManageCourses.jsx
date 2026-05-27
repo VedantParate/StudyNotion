@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { getAllCoursesAdmin, deleteCourseAdmin } from "../../services/operations/adminAPI"
-import Spinner from "../Common/Spinner"
+import Spinner from "../common/Spinner"
 import { FiTrash2 } from "react-icons/fi"
 
 export default function ManageCourses() {

@@ -5,7 +5,7 @@ import { FiUsers } from "react-icons/fi"
 import { HiOutlineBookOpen } from "react-icons/hi"
 import { BiCategory } from "react-icons/bi"
 import { MdOutlineAttachMoney } from "react-icons/md"
-import Spinner from "../Common/Spinner"
+import Spinner from "../common/Spinner"
 
 const StatCard = ({ icon, label, value, color }) => (
   <div className="flex items-center gap-4 rounded-xl border border-richblack-700 bg-richblack-800 p-6">

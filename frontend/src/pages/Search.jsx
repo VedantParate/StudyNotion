@@ -5,7 +5,7 @@ import { useSearchParams } from "react-router-dom"
 import { searchCourses } from "../services/operations/searchAPI"
 import SearchBar from "../components/Search/SearchBar"
 import SearchResults from "../components/Search/SearchResults"
-import Spinner from "../components/Common/Spinner"
+import Spinner from "../components/common/Spinner"
 // ← Navbar and Footer removed
 
 const CATEGORIES = ["All", "Web Dev", "Data Science", "AI/ML", "Design", "Business"]
