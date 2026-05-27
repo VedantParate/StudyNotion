@@ -23,15 +23,22 @@ dbConnect();
 // Middlewares
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-  cors({
-    origin: [
+app.use(cors({
+  origin: function(origin, callback) {
+    const allowedOrigins = [
       "http://localhost:5173",
       "https://study-notion-git-master-vedantparates-projects.vercel.app",
-    ],
-    credentials: true,
-  })
-);
+      "https://study-notion-dhor8q3al-vedantparates-projects.vercel.app",
+    ]
+    // Allow all vercel preview deployments
+    if (!origin || allowedOrigins.includes(origin) || origin.endsWith(".vercel.app")) {
+      callback(null, true)
+    } else {
+      callback(new Error("Not allowed by CORS"))
+    }
+  },
+  credentials: true
+}))
 app.use(
   fileUpload({
     useTempFiles: true,
