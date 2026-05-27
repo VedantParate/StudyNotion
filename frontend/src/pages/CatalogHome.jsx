@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { apiConnector } from "../services/apiConnector"
 import { categories } from "../services/apis"
-import Spinner from "../components/Common/Spinner"
+import Spinner from "../components/common/Spinner"
 
 export default function CatalogHome() {
   const [allCategories, setAllCategories] = useState([])
