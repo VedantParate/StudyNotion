@@ -1,0 +1,23 @@
+PORT=4000
+FRONTEND_URL=http://localhost:3000
+
+# MongoDB
+MONGODB_URL=mongodb+srv://vedant:vedant1234@cluster0.j8x3f4b.mongodb.net/?appName=Cluster0
+
+# JWT
+JWT_SECRET=your_jwt_secret_key
+JWT_EXPIRY=24h
+
+# Cloudinary
+CLOUD_NAME=your_cloud_name
+API_KEY=your_cloudinary_api_key
+API_SECRET=your_cloudinary_api_secret
+
+# Nodemailer
+MAIL_HOST=smtp.gmail.com
+MAIL_USER=your_email@gmail.com
+MAIL_PASS=your_email_app_password
+
+# Razorpay
+RAZORPAY_KEY=your_razorpay_key
+RAZORPAY_SECRET=your_razorpay_secret
